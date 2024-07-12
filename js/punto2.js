@@ -22,10 +22,10 @@ do {
 
 // Mostrar la longitud del arreglo
 const longitud = ciudades.length;
-document.write(`<p>La cantidad de ciudades ingresadas es: ${longitud}</p>`);
+document.write(`<p>El arreglo de ciudades tiene ${longitud} elementos</p>`);
 
 // Mostrar en el documento web los ítems de las posiciones primera, tercera y última
-document.write(`<p>Lista de Ciudades</p>`);
+
 document.write(`<ul>`);
 
 // Verifica si hay al menos una ciudad para mostrar la primera
@@ -42,18 +42,14 @@ if (longitud > 2) {
 if (longitud > 0) {
     document.write(`<li>Última ciudad: ${ciudades[longitud - 1]}</li>`);
 }
+const agregado = ciudades.push(`Paris`)
+document.write(`<li>La ciudad agregada es ${ciudades[longitud]}</li>`)
 
 document.write(`</ul>`);
 
-// Añade en última posición la ciudad de París
-let agregado = ciudades.push(`París`);
-document.write(`<p>La ciudad agregada es ${agregado}</p>`)
 
-// Escribe por pantalla el elemento que ocupa la segunda posición
-if (longitud > 1) {
-    document.write(`<p>La ciudad en la segunda posición es: ${ciudades[1]}</p>`);
-}
 
+document.write(`<h1>Arreglo de ciudades</h1>`);
 // Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'
 if (longitud > 1) {
     ciudades[1] = "Barcelona";
@@ -62,11 +58,10 @@ if (longitud > 1) {
 
 
 
-document.write(`<h1>Arreglo de ciudades</h1>`);
 document.write(`<ul>`);
 
 for (let i = 0; i < longitud; i++) {
     document.write(`<li>${ciudades[i]}</li>`);
   }
-
+document.write(`<li>${ciudades[longitud]}</li>`)
 document.write(`</ul>`);

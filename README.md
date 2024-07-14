@@ -1,4 +1,4 @@
-<h1>Trabajo practico 02 de JavaScrip</h1>
+<h1>Trabajo practico 03 de JavaScript</h1>
 Son los 7 puntos del TP 03
 <h2>Lenguaje utilizado</h2>
  - html
